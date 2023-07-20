@@ -1,6 +1,6 @@
 # Invoice Application
 
-This project provides a simple application for creating and managing invoices.
+This project provides a simple application for creating and managing invoices.You can preview the application at https://invoice-nine-beta.vercel.app/.
 
 ## Installation
 
