@@ -1,3 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.shadow-red {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Kırmızı gölge efekti */
+}

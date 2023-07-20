@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BillsListItem from "./BilsListItem";
+import InvoiceAlert from "./InvoiceAlert";
 
 interface ListItem {
   id: number;
@@ -24,9 +25,20 @@ const Paid = () => {
     return item.status === filter;
   });
 
+  const handleInvoiceAlertClick = () => {
+    setFilter("Delayed");
+  };
+
+  const unpaidCount = 1;
+
   return (
-    <div className="flex flex-col items-center justify-center mt-16">
-      <div className="flex space-x-4 mb-4">
+    <div className="flex flex-col items-center justify-center mt-2">
+      <InvoiceAlert
+        unpaidCount={unpaidCount}
+        onClick={handleInvoiceAlertClick}
+      />
+
+      <div className="flex space-x-4 mb-4 mt-12">
         <button
           className={`${
             filter === "all"
