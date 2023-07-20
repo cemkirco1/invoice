@@ -14,6 +14,6 @@ This project provides a simple application for creating and managing invoices.Yo
 4. Start the application:
    'yarn dev'
 
-## İletişim
+## Communication
 
 If you have any questions, suggestions, or feedback, feel free to get in touch. You can reach me by email at kirkoyuncem@gmail.com.
