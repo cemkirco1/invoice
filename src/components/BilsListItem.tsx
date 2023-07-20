@@ -6,6 +6,7 @@ interface BillsListItem {
     companyName: string;
     price: number;
     status: string;
+    statusName: string;
   };
 }
 
@@ -31,7 +32,7 @@ const BillsListItem = ({ item }: BillsListItem) => {
           className={` rounded-full px-2 w-28 text-center text-white 
                   ${statusColor}`}
         >
-          {item.status}
+          {item.statusName}
         </span>
       </div>
     </li>

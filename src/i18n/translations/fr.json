@@ -1,0 +1,53 @@
+{
+  "newInvoice": {
+    "NewInvoice": "Nouvelle Facture",
+    "InvoiceName": "Nom de la Facture",
+    "Person": "Personne",
+    "Company": "Entreprise",
+    "FirstName": "Prénom",
+    "LastName": "Nom de Famille",
+    "CompanyName": "Nom de l'Entreprise",
+    "TaxNumber": "Numéro de Taxe",
+    "Phone": "Téléphone",
+    "Email": "Email",
+    "Currency": "Devise",
+    "Language": "Langue",
+    "Date": "Date",
+    "AddressLine1": "Adresse Ligne 1",
+    "AddressLine2": "Adresse Ligne 2",
+    "City": "Ville",
+    "Country": "Pays",
+    "SameAsInvoiceAddress": "Identique à l'Adresse de Facturation",
+    "LineItems": "Articles",
+    "Description": "Description",
+    "Quantity": "Quantité",
+    "UnitPrice": "Prix Unitaire",
+    "Delete": "Supprimer",
+    "AddItem": "Ajouter un Article",
+    "Notes": "Remarques",
+    "Submit": "Soumettre",
+    "InvoiceAddressLine1": "Adresse de facturation Ligne 1",
+    "InvoiceAddressLine2": "Adresse de facturation Ligne 1",
+    "InvoiceCity": "Ville de facturation",
+    "InvoiceCountry": "Pays de facturation"
+  },
+  "InvoiceAlert": {
+    "unpaid": "{{unpaidCount}} factures impayées trouvées.",
+    "allPaid": "Toutes les factures sont payées."
+  },
+  "header": {
+    "bills": "Factures",
+    "newBills": "Nouvelles Factures"
+  },
+
+  "paid": {
+    "all": "Tous",
+    "paid": "Payé",
+    "waiting": "En attente",
+    "delayed": "Retardé",
+    "id": "ID",
+    "companyName": "Nom de l'entreprise",
+    "price": "Prix",
+    "status": "Statut"
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaExclamationCircle } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 interface InvoiceAlertProps {
   unpaidCount: number;
@@ -10,6 +11,8 @@ const InvoiceAlert: React.FC<InvoiceAlertProps> = ({
   unpaidCount,
   onClick,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="invoice-alert-container flex justify-center items-center">
       <div
@@ -19,9 +22,9 @@ const InvoiceAlert: React.FC<InvoiceAlertProps> = ({
         <FaExclamationCircle className="text-xl" />
         <div>
           {unpaidCount > 0 ? (
-            <p>Ödenmemiş {unpaidCount} fatura bulunmaktadır.</p>
+            <p>{t("InvoiceAlert.unpaid", { unpaidCount })}</p>
           ) : (
-            <p>Tüm faturalar ödenmiştir.</p>
+            <p>{t("InvoiceAlert.allPaid")}</p>
           )}
         </div>
       </div>

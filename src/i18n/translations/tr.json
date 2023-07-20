@@ -1,0 +1,53 @@
+{
+  "newInvoice": {
+    "NewInvoice": "Yeni Fatura",
+    "InvoiceName": "Fatura Adı",
+    "Person": "Birey",
+    "Company": "Şirket",
+    "FirstName": "İsim",
+    "LastName": "Soyisim",
+    "CompanyName": "Şirket Adı",
+    "TaxNumber": "Vergi Numarası",
+    "Phone": "Telefon",
+    "Email": "Email",
+    "Currency": "Para Birimi",
+    "Language": "Dil",
+    "Date": "Tarih",
+    "AddressLine1": "Adres Satırı 1",
+    "AddressLine2": "Adres Satırı 2",
+    "City": "Şehir",
+    "Country": "Ülke",
+    "SameAsInvoiceAddress": "Fatura Adresiyle Aynı",
+    "LineItems": "Satır Ürünler",
+    "Description": "Açıklama",
+    "Quantity": "Miktar",
+    "UnitPrice": "Birim Fiyatı",
+    "Delete": "Sil",
+    "AddItem": "Ürün Ekle",
+    "Notes": "Notlar",
+    "Submit": "Gönder",
+    "InvoiceAddressLine1": "Fatura Adresi Satır 1",
+    "InvoiceAddressLine2": "Fatura Adresi Satır 2",
+    "InvoiceCity": "Fatura Şehri",
+    "InvoiceCountry": "Fatura Ülkesi"
+  },
+  "InvoiceAlert": {
+    "unpaid": "Ödenmemiş {{unpaidCount}} fatura bulunmaktadır.",
+    "allPaid": "Tüm faturalar ödenmiştir."
+  },
+  "header": {
+    "bills": "Faturalar",
+    "newBills": "Yeni Faturalar"
+  },
+
+  "paid": {
+    "all": "Hepsi",
+    "paid": "Ödendi",
+    "waiting": "Beklemede",
+    "delayed": "Gecikmiş",
+    "id": "ID",
+    "companyName": "Şirket Adı",
+    "price": "Fiyat",
+    "status": "Durum"
+  }
+}

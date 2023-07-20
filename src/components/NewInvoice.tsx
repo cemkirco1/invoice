@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface InvoiceItem {
   description: string;
@@ -137,13 +138,14 @@ const NewInvoice = () => {
     });
   };
 
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto mt-8 bg-gray-100 p-8 rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">New Invoice</h2>
+      <h2 className="text-2xl font-bold mb-4">{t("newInvoice.NewInvoice")}</h2>
       <form onSubmit={handleSubmit} className="flex justify-between">
         <div className="flex-1 mr-5">
           <label className="block mb-2">
-            Invoice Name:
+            {t("newInvoice.InvoiceName")}
             <input
               type="text"
               name="invoiceName"
@@ -162,7 +164,7 @@ const NewInvoice = () => {
                 onChange={handleRadioChange}
                 className="mr-2"
               />
-              <span>Person</span>
+              <span>{t("newInvoice.Person")}</span>
             </div>
             <div className="flex items-center mb-2">
               <input
@@ -173,12 +175,12 @@ const NewInvoice = () => {
                 onChange={handleRadioChange}
                 className="mr-2"
               />
-              <span>Company</span>
+              <span> {t("newInvoice.Company")}</span>
             </div>
           </div>
           <div className="flex justify-between">
             <label className="block mb-2 mr-5">
-              First Name:
+              {t("newInvoice.FirstName")}
               <input
                 type="text"
                 name="firstName"
@@ -189,7 +191,7 @@ const NewInvoice = () => {
             </label>
 
             <label className="block mb-2">
-              Last Name:
+              {t("newInvoice.LastName")}
               <input
                 type="text"
                 name="lastName"
@@ -202,7 +204,7 @@ const NewInvoice = () => {
           {invoice.recipientType === "company" && (
             <div>
               <label className="block mb-2">
-                Company Name:
+                {t("newInvoice.CompanyName")}
                 <input
                   type="text"
                   name="companyName"
@@ -212,7 +214,7 @@ const NewInvoice = () => {
                 />
               </label>
               <label className="block mb-2">
-                Tax Number:
+                {t("newInvoice.TaxNumber")}
                 <input
                   type="text"
                   name="taxNumber"
@@ -224,7 +226,7 @@ const NewInvoice = () => {
             </div>
           )}
           <label className="block mb-2">
-            Phone:
+            {t("newInvoice.Phone")}
             <input
               type="text"
               name="phone"
@@ -234,7 +236,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Email:
+            {t("newInvoice.Email")}
             <input
               type="text"
               name="email"
@@ -244,7 +246,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Currency:
+            {t("newInvoice.Currency")}
             <input
               type="text"
               name="currency"
@@ -254,7 +256,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Language:
+            {t("newInvoice.Language")}
             <input
               type="text"
               name="language"
@@ -264,7 +266,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Date:
+            {t("newInvoice.Date")}
             <input
               type="text"
               name="date"
@@ -274,7 +276,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Address Line 1:
+            {t("newInvoice.AddressLine1")}
             <input
               type="text"
               name="addressLine1"
@@ -284,7 +286,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Address Line 2:
+            {t("newInvoice.AddressLine2")}
             <input
               type="text"
               name="addressLine2"
@@ -294,7 +296,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            City:
+            {t("newInvoice.City")}
             <input
               type="text"
               name="city"
@@ -304,7 +306,7 @@ const NewInvoice = () => {
             />
           </label>
           <label className="block mb-2">
-            Country:
+            {t("newInvoice.Country")}
             <input
               type="text"
               name="country"
@@ -321,12 +323,12 @@ const NewInvoice = () => {
               onChange={handleCheckboxChange}
               className="mr-2"
             />
-            Same as Invoice Address
+            {t("newInvoice.SameAsInvoiceAddress")}
           </label>
           {!invoice.showAddress && (
             <div className="mb-4">
               <label className="block mb-2">
-                Invoice Address Line 1:
+                {t("newInvoice.InvoiceAddressLine1")}
                 <input
                   type="text"
                   name="addressLine1"
@@ -336,7 +338,7 @@ const NewInvoice = () => {
                 />
               </label>
               <label className="block mb-2">
-                Invoice Address Line 2:
+                {t("newInvoice.InvoiceAddressLine2")}
                 <input
                   type="text"
                   name="addressLine2"
@@ -346,7 +348,7 @@ const NewInvoice = () => {
                 />
               </label>
               <label className="block mb-2">
-                Invoice City:
+                {t("newInvoice.InvoiceCity")}
                 <input
                   type="text"
                   name="city"
@@ -356,7 +358,7 @@ const NewInvoice = () => {
                 />
               </label>
               <label className="block mb-2">
-                Invoice Country:
+                {t("newInvoice.InvoiceCountry")}
                 <input
                   type="text"
                   name="country"
@@ -369,11 +371,14 @@ const NewInvoice = () => {
           )}
         </div>
         <div className="flex-1">
-          <h3 className="text-lg font-bold mt-6 mb-4">Line Items</h3>
+          <h3 className="text-lg font-bold mt-6 mb-4">
+            {" "}
+            {t("newInvoice.LineItems")}
+          </h3>
           {invoice.lineItems.map((item, index) => (
             <div key={index} className="mb-4">
               <label className="block mb-2">
-                Description:
+                {t("newInvoice.Description")}
                 <input
                   type="text"
                   name="description"
@@ -383,7 +388,7 @@ const NewInvoice = () => {
                 />
               </label>
               <label className="block mb-2">
-                Quantity:
+                {t("newInvoice.Quantity")}
                 <input
                   type="number"
                   name="quantity"
@@ -393,7 +398,7 @@ const NewInvoice = () => {
                 />
               </label>
               <label className="block mb-2">
-                Unit Price:
+                {t("newInvoice.UnitPrice")}
                 <input
                   type="number"
                   name="unitPrice"
@@ -407,7 +412,7 @@ const NewInvoice = () => {
                 onClick={() => handleDeleteItem(index)}
                 className="text-red-500 hover:text-red-700 mt-2"
               >
-                Delete
+                {t("newInvoice.Delete")}
               </button>
             </div>
           ))}
@@ -416,10 +421,10 @@ const NewInvoice = () => {
             onClick={handleAddItem}
             className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
           >
-            Add Item
+            {t("newInvoice.AddItem")}
           </button>
           <label className="block mt-6">
-            Notes:
+            {t("newInvoice.Notes")}
             <textarea
               name="notes"
               value={invoice.notes}
@@ -431,7 +436,7 @@ const NewInvoice = () => {
             type="submit"
             className="bg-green-500 text-white px-4 py-2 rounded mt-4"
           >
-            Submit
+            {t("newInvoice.Submit")}
           </button>
         </div>
       </form>

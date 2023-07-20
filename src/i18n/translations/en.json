@@ -1,0 +1,53 @@
+{
+  "newInvoice": {
+    "NewInvoice": "New Invoice",
+    "InvoiceName": "Invoice Name",
+    "Person": "Person",
+    "Company": "Company",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "CompanyName": "Company Name",
+    "TaxNumber": "Tax Number",
+    "Phone": "Phone",
+    "Email": "Email",
+    "Currency": "Currency",
+    "Language": "Language",
+    "Date": "Date",
+    "AddressLine1": "Address Line 1",
+    "AddressLine2": "Address Line 2",
+    "City": "City",
+    "Country": "Country",
+    "SameAsInvoiceAddress": "Same as Invoice Address",
+    "LineItems": "Line Items",
+    "Description": "Description",
+    "Quantity": "Quantity",
+    "UnitPrice": "Unit Price",
+    "Delete": "Delete",
+    "AddItem": "Add Item",
+    "Notes": "Notes",
+    "Submit": "Submit",
+    "InvoiceAddressLine1": "Invoice Address Line 1",
+    "InvoiceAddressLine2": "Invoice Address Line 2",
+    "InvoiceCity": "Invoice City",
+    "InvoiceCountry": "Invoice Country"
+  },
+  "InvoiceAlert": {
+    "unpaid": "{{unpaidCount}} unpaid invoices found.",
+    "allPaid": "All invoices are paid."
+  },
+  "header": {
+    "bills": "Bills",
+    "newBills": "New Bills"
+  },
+
+  "paid": {
+    "all": "All",
+    "paid": "Paid",
+    "waiting": "Waiting",
+    "delayed": "Delayed",
+    "id": "ID",
+    "companyName": "Company Name",
+    "price": "Price",
+    "status": "Status"
+  }
+}
